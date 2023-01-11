@@ -28,5 +28,9 @@
     height: var(--dimensions);
     border-radius: 50%;
     background: rgb(255,217,0);
-    background: linear-gradient(145deg, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)
+    background: linear-gradient(145deg, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%);
+    position: relative;
+    top: 25%;
+    left: 30%;
+    margin: 0px;
 }
