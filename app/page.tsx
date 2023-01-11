@@ -6,15 +6,11 @@ export default function Page() {
     return (
         <>
             <div className={styles.main}>
-                <div className={styles.left} id="left-div">
-                    <div className={styles.circle}></div>
-                </div>
+                <div className={styles.left} id="left-div"></div>
                 
                 <div className={styles.center}></div>
                 
-                <div className={styles.right} id="right-div">
-                    <div className={styles.circle}></div>
-                </div>
+                <div className={styles.right} id="right-div"></div>
             </div>
             
             <Script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" strategy="afterInteractive"/>
