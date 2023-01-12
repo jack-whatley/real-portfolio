@@ -1,18 +1,24 @@
 const getRandom = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + 1;
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
 $(document).ready(() => {
-    let split = getRandom(1, 2);
+    let split = getRandom(0, 2);
     if (split === 1) {
-        $("#left-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
-        $("#left-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
-        $("#right-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
+        $("#left-div").append("<div class='Home_circle__nNb5i Home_leftAnimation__Eki2_' id='1'></div>");
+        $("#1").css({"top": `${getRandom(30, 45)}%`, "left": `${getRandom(20, 80)}%`});
+        $("#left-div").append("<div class='Home_circle__nNb5i Home_leftAnimation__Eki2_' id='2'></div>");
+        $("#2").css({"top": `${getRandom(45, 60)}%`, "left": `${getRandom(20, 80)}%`});
+        $("#right-div").append("<div class='Home_circle__nNb5i Home_rightAnimation___Jf8q' id='3'></div>");
+        $("#3").css({"top": `${getRandom(30, 60)}%`, "left": `${getRandom(20, 80)}%`});
 
     } else {
-        $("#left-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
-        $("#right-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
-        $("#right-div").append("<div class='Home_circle__nNb5i'></div>").css({"background": `linear-gradient(${getRandom(1,360)}}, rgba(255,217,0,1) 0%, rgba(255,0,0,1) 100%)`}, {"top": `${getRandom(25, 65)}%`}, {"left": `${getRandom(20, 80)}%`});
+        $("#left-div").append("<div class='Home_circle__nNb5i Home_leftAnimation__Eki2_' id='1'></div>");
+        $("#1").css({"top": `${getRandom(30, 60)}%`, "left": `${getRandom(20, 80)}%`});
+        $("#right-div").append("<div class='Home_circle__nNb5i Home_rightAnimation___Jf8q' id='2'></div>");
+        $("#2").css({"top": `${getRandom(30, 45)}%`, "left": `${getRandom(20, 80)}%`});
+        $("#right-div").append("<div class='Home_circle__nNb5i Home_rightAnimation___Jf8q' id='3'></div>");
+        $("#3").css({"top": `${getRandom(45, 60)}%`, "left": `${getRandom(20, 80)}%`});
 
     }
 
